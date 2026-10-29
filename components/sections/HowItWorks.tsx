@@ -38,22 +38,22 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-white py-24 relative overflow-hidden">
+    <section id="how-it-works" className="bg-[#0B1119] py-24 relative overflow-hidden">
       {/* Subtle ambient blur */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-orange-400/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-widest text-orange-600 bg-orange-50 border border-orange-200/80 px-4 py-2 rounded-full mb-4 shadow-xs">
+          <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-widest text-orange-400 bg-orange-950/40 border border-orange-500/30 px-4 py-2 rounded-full mb-4 shadow-xs">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
             Seamless Experience
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#12334A] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Rent a Bike in{' '}
             <span className="text-gradient-animated">3 Simple Steps</span>
           </h2>
-          <p className="text-gray-500 text-base sm:text-lg max-w-xl mx-auto mt-4 font-medium">
+          <p className="text-gray-300 text-base sm:text-lg max-w-xl mx-auto mt-4 font-medium">
             No endless paperwork or complex deposits. Just pick, confirm with 1 tap, and explore Uttarakhand.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function HowItWorks() {
             {steps.map((step, i) => (
               <div
                 key={i}
-                className="bg-[#F9FBFC] rounded-3xl border border-gray-100 p-8 text-center group card-luxury-hover flex flex-col items-center relative"
+                className="bg-[#0D1520] rounded-3xl border border-white/10 p-8 text-center group card-luxury-hover flex flex-col items-center relative"
               >
                 {/* Floating Glow Halo */}
                 <div className="relative mb-6">
@@ -84,10 +84,10 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-black text-[#12334A] mb-3 group-hover:text-orange-600 transition-colors">
+                <h3 className="text-xl font-black text-white mb-3 group-hover:text-orange-400 transition-colors">
                   {step.title}
                 </h3>
-                <p className="text-gray-500 leading-relaxed text-sm max-w-xs mx-auto font-normal">
+                <p className="text-gray-400 leading-relaxed text-sm max-w-xs mx-auto font-normal">
                   {step.description}
                 </p>
               </div>

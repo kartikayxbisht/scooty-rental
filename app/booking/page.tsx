@@ -157,57 +157,59 @@ Owner Phone: 9286535286
 
   if (isConfirmed) {
     return (
-      <div className="pt-24 min-h-screen bg-[#F1F4F6] flex items-center justify-center px-4 py-12">
-        <div className="bg-white rounded-3xl border border-gray-100 p-8 sm:p-10 max-w-lg w-full text-center shadow-xl">
+      <div className="pt-24 min-h-screen bg-[#06090e] flex items-center justify-center px-4 py-12">
+        <div className="bg-[#0D1520] rounded-3xl border border-white/10 p-8 sm:p-10 max-w-lg w-full text-center shadow-2xl">
           <div className="mb-4 flex justify-center">
-            <Image
-              src="/images/logo.png"
-              alt="Rehan Bike Rental"
-              width={220}
-              height={55}
-              className="h-11 w-auto object-contain"
-            />
+            <div className="bg-white rounded-xl p-2 inline-block">
+              <Image
+                src="/images/logo.png"
+                alt="Rehan Bike Rental"
+                width={200}
+                height={50}
+                className="h-10 w-auto object-contain"
+              />
+            </div>
           </div>
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <CheckCircle2 className="w-10 h-10 text-green-500" />
+          <div className="w-16 h-16 bg-emerald-500/10 border border-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <CheckCircle2 className="w-10 h-10 text-emerald-400" />
           </div>
-          <h1 className="text-2xl font-extrabold text-[#12334A] mb-1">Booking Confirmed!</h1>
-          <p className="text-gray-500 text-sm mb-5">
-            Your <span className="font-semibold text-[#12334A]">{scooter.name}</span> has been booked with <span className="font-semibold text-orange-600">{SITE_CONFIG.name}</span>.
+          <h1 className="text-2xl font-extrabold text-white mb-1">Booking Confirmed!</h1>
+          <p className="text-gray-400 text-sm mb-5">
+            Your <span className="font-semibold text-white">{scooter.name}</span> has been booked with <span className="font-semibold text-orange-400">{SITE_CONFIG.name}</span>.
           </p>
 
           {/* Booking ID */}
-          <div className="bg-orange-50 border border-orange-100 rounded-2xl p-3.5 mb-5">
-            <p className="text-xs text-gray-500 mb-0.5">Booking ID</p>
-            <p className="text-xl font-extrabold text-orange-500">#{bookingId}</p>
+          <div className="bg-orange-500/10 border border-orange-500/20 rounded-2xl p-3.5 mb-5">
+            <p className="text-xs text-gray-400 mb-0.5">Booking ID</p>
+            <p className="text-xl font-extrabold text-orange-400">#{bookingId}</p>
           </div>
 
           {/* Automated notification status confirmation badges */}
-          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-5 text-left text-xs space-y-2.5">
-            <p className="font-bold text-emerald-900 text-xs uppercase tracking-wider mb-1">
+          <div className="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4 mb-5 text-left text-xs space-y-2.5">
+            <p className="font-bold text-emerald-400 text-xs uppercase tracking-wider mb-1">
               ✅ Automatically Sent to Owner:
             </p>
-            <div className="flex items-center gap-2 text-emerald-800 font-semibold">
-              <Check className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+            <div className="flex items-center gap-2 text-emerald-300 font-semibold">
+              <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <span>WhatsApp: <strong>+91 9286535286</strong> (Message sent)</span>
             </div>
-            <div className="flex items-center gap-2 text-emerald-800 font-semibold">
-              <Check className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+            <div className="flex items-center gap-2 text-emerald-300 font-semibold">
+              <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <span>Gmail: <strong>Ra1899490@gmail.com</strong> (Email sent)</span>
             </div>
           </div>
 
           {/* Customer details summary */}
-          <div className="text-sm text-gray-600 space-y-2 mb-6 text-left bg-gray-50 rounded-2xl p-4">
+          <div className="text-sm text-gray-300 space-y-2 mb-6 text-left bg-[#15202e] rounded-2xl p-4 border border-white/5">
             <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Customer Details Sent</p>
-            <div className="flex justify-between"><span>Name</span><span className="font-semibold text-[#12334A]">{form.name}</span></div>
-            <div className="flex justify-between"><span>Phone</span><span className="font-semibold text-[#12334A]">{form.phone}</span></div>
-            <div className="flex justify-between"><span>Email</span><span className="font-semibold text-[#12334A]">{form.email}</span></div>
-            <div className="flex justify-between"><span>Driving License</span><span className="font-mono font-semibold text-[#12334A]">{form.license}</span></div>
-            <div className="pt-2 border-t border-gray-200 mt-2 flex justify-between"><span>Pickup</span><span className="font-medium text-[#12334A]">{pickupDate} at {pickupTime}</span></div>
-            <div className="flex justify-between"><span>Return</span><span className="font-medium text-[#12334A]">{returnDate} at {returnTime}</span></div>
-            <div className="flex justify-between"><span>Shop Location</span><span className="font-medium text-[#12334A]">{SITE_CONFIG.address}</span></div>
-            <div className="flex justify-between pt-2 border-t border-gray-200 mt-1"><span className="font-bold text-[#12334A]">Total Rent</span><span className="font-extrabold text-orange-500 text-base">{formatPrice(total)}</span></div>
+            <div className="flex justify-between"><span>Name</span><span className="font-semibold text-white">{form.name}</span></div>
+            <div className="flex justify-between"><span>Phone</span><span className="font-semibold text-white">{form.phone}</span></div>
+            <div className="flex justify-between"><span>Email</span><span className="font-semibold text-white">{form.email}</span></div>
+            <div className="flex justify-between"><span>Driving License</span><span className="font-mono font-semibold text-white">{form.license}</span></div>
+            <div className="pt-2 border-t border-white/10 mt-2 flex justify-between"><span>Pickup</span><span className="font-medium text-white">{pickupDate} at {pickupTime}</span></div>
+            <div className="flex justify-between"><span>Return</span><span className="font-medium text-white">{returnDate} at {returnTime}</span></div>
+            <div className="flex justify-between"><span>Shop Location</span><span className="font-medium text-white">{SITE_CONFIG.address}</span></div>
+            <div className="flex justify-between pt-2 border-t border-white/10 mt-1"><span className="font-bold text-white">Total Rent</span><span className="font-extrabold text-orange-400 text-base">{formatPrice(total)}</span></div>
           </div>
 
           {/* Backup Action Buttons */}
@@ -225,7 +227,7 @@ Owner Phone: 9286535286
               href={gmailUrl || mailtoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-3 bg-[#12334A] hover:bg-[#0e2a3d] text-white font-semibold rounded-xl transition-all shadow-sm text-sm"
+              className="w-full flex items-center justify-center gap-2 py-3 bg-[#15202e] hover:bg-[#1e2d40] border border-white/10 text-white font-semibold rounded-xl transition-all shadow-sm text-sm"
             >
               <Mail className="w-4 h-4 text-orange-400" />
               Re-open Gmail (Ra1899490@gmail.com)
@@ -233,8 +235,8 @@ Owner Phone: 9286535286
           </div>
 
           <div className="flex gap-3">
-            <Link href="/" className="flex-1 py-2.5 border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors text-sm">Return Home</Link>
-            <Link href="/fleet" className="flex-1 py-2.5 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-colors text-sm">Browse Fleet</Link>
+            <Link href="/" className="flex-1 py-2.5 border border-white/10 bg-[#15202e] text-gray-300 font-semibold rounded-xl hover:bg-[#1e2d40] transition-colors text-sm">Return Home</Link>
+            <Link href="/fleet" className="flex-1 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold rounded-xl hover:from-orange-600 hover:to-amber-600 transition-colors text-sm shadow-md shadow-orange-500/20">Browse Fleet</Link>
           </div>
         </div>
       </div>
@@ -242,29 +244,29 @@ Owner Phone: 9286535286
   }
 
   return (
-    <div className="pt-24 min-h-screen bg-[#F1F4F6]">
+    <div className="pt-24 min-h-screen bg-[#06090e]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
-          <Link href={`/fleet/${scooter.id}`} className="text-gray-400 hover:text-gray-600 transition-colors">
+          <Link href={`/fleet/${scooter.id}`} className="text-gray-400 hover:text-white transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <div>
-            <h1 className="text-2xl font-extrabold text-[#12334A]">Complete Your Booking</h1>
-            <p className="text-gray-500 text-sm">One tap sends your reservation directly to the owner via WhatsApp & Gmail.</p>
+            <h1 className="text-2xl font-extrabold text-white">Complete Your Booking</h1>
+            <p className="text-gray-400 text-sm">One tap sends your reservation directly to the owner via WhatsApp & Gmail.</p>
           </div>
         </div>
 
         {/* Quick Phone Booking Callout */}
-        <div className="bg-orange-50 border border-orange-200 rounded-2xl p-4 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="bg-[#0D1520] border border-orange-500/20 rounded-2xl p-4 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-start gap-3">
             <div className="w-9 h-9 bg-orange-500 text-white rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <p className="font-bold text-[#12334A] text-sm">Automated Instant Reservation</p>
-              <p className="text-xs text-gray-600">
-                Tapping the confirm button sends your complete booking info directly to WhatsApp: <strong>9286535286</strong> and Gmail: <strong>Ra1899490@gmail.com</strong>.
+              <p className="font-bold text-white text-sm">Automated Instant Reservation</p>
+              <p className="text-xs text-gray-400">
+                Tapping the confirm button sends your complete booking info directly to WhatsApp: <strong className="text-white">9286535286</strong> and Gmail: <strong className="text-white">Ra1899490@gmail.com</strong>.
               </p>
             </div>
           </div>
@@ -285,57 +287,57 @@ Owner Phone: 9286535286
           {/* LEFT: Form */}
           <div className="lg:col-span-2 space-y-6">
             {/* Scooter Selection Display */}
-            <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-              <h2 className="font-bold text-[#12334A] mb-4 text-sm uppercase tracking-wider">Selected Scooter</h2>
+            <div className="bg-[#0D1520] rounded-2xl border border-white/10 p-6 shadow-sm">
+              <h2 className="font-bold text-white mb-4 text-sm uppercase tracking-wider">Selected Vehicle</h2>
               <div className="flex items-center gap-4">
-                <div className="relative w-24 h-16 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0">
+                <div className="relative w-24 h-16 bg-[#15202e] rounded-xl overflow-hidden flex-shrink-0 border border-white/5">
                   <Image src={scooter.image} alt={scooter.name} fill className="object-contain p-2" />
                 </div>
                 <div>
-                  <p className="font-bold text-[#12334A]">{scooter.name}</p>
-                  <p className="text-sm text-orange-500 font-semibold">{formatPrice(scooter.pricePerDay)}/day</p>
+                  <p className="font-bold text-white">{scooter.name}</p>
+                  <p className="text-sm text-orange-400 font-semibold">{formatPrice(scooter.pricePerDay)}/day</p>
                 </div>
               </div>
             </div>
 
             {/* Rental Details */}
-            <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-              <h2 className="font-bold text-[#12334A] mb-4 text-sm uppercase tracking-wider">Rental Details</h2>
+            <div className="bg-[#0D1520] rounded-2xl border border-white/10 p-6 shadow-sm">
+              <h2 className="font-bold text-white mb-4 text-sm uppercase tracking-wider">Rental Details</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Single Shop Location */}
                 <div className="sm:col-span-2">
-                  <label className="text-xs font-semibold text-gray-500 block mb-2">
-                    <MapPin className="w-3.5 h-3.5 inline mr-1 text-orange-500" />
+                  <label className="text-xs font-semibold text-gray-400 block mb-2">
+                    <MapPin className="w-3.5 h-3.5 inline mr-1 text-orange-400" />
                     Pickup & Return Shop Location
                   </label>
-                  <div className="w-full px-4 py-3 border border-orange-200 bg-orange-50/50 rounded-xl text-sm font-semibold text-[#12334A] flex items-center justify-between">
+                  <div className="w-full px-4 py-3 border border-orange-500/30 bg-orange-500/10 rounded-xl text-sm font-semibold text-white flex items-center justify-between">
                     <span>{SITE_CONFIG.address}</span>
-                    <span className="text-xs bg-orange-100 text-orange-700 px-2.5 py-1 rounded-full font-bold">Main Shop</span>
+                    <span className="text-xs bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2.5 py-1 rounded-full font-bold">Main Shop</span>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-semibold text-gray-500 block mb-2"><Calendar className="w-3.5 h-3.5 inline mr-1" />Pickup Date</label>
-                  <input type="date" value={pickupDate} min={today} onChange={(e) => setPickupDate(e.target.value)} className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-50" />
+                  <label className="text-xs font-semibold text-gray-400 block mb-2"><Calendar className="w-3.5 h-3.5 inline mr-1 text-orange-400" />Pickup Date</label>
+                  <input type="date" value={pickupDate} min={today} onChange={(e) => setPickupDate(e.target.value)} className="w-full px-4 py-3 border border-white/10 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 bg-[#15202e] text-white" />
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-gray-500 block mb-2"><Clock className="w-3.5 h-3.5 inline mr-1" />Pickup Time</label>
-                  <input type="time" value={pickupTime} onChange={(e) => setPickupTime(e.target.value)} className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-50" />
+                  <label className="text-xs font-semibold text-gray-400 block mb-2"><Clock className="w-3.5 h-3.5 inline mr-1 text-orange-400" />Pickup Time</label>
+                  <input type="time" value={pickupTime} onChange={(e) => setPickupTime(e.target.value)} className="w-full px-4 py-3 border border-white/10 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 bg-[#15202e] text-white" />
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-gray-500 block mb-2"><Calendar className="w-3.5 h-3.5 inline mr-1" />Return Date</label>
-                  <input type="date" value={returnDate} min={pickupDate} onChange={(e) => setReturnDate(e.target.value)} className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-50" />
+                  <label className="text-xs font-semibold text-gray-400 block mb-2"><Calendar className="w-3.5 h-3.5 inline mr-1 text-orange-400" />Return Date</label>
+                  <input type="date" value={returnDate} min={pickupDate} onChange={(e) => setReturnDate(e.target.value)} className="w-full px-4 py-3 border border-white/10 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 bg-[#15202e] text-white" />
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-gray-500 block mb-2"><Clock className="w-3.5 h-3.5 inline mr-1" />Return Time</label>
-                  <input type="time" value={returnTime} onChange={(e) => setReturnTime(e.target.value)} className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-50" />
+                  <label className="text-xs font-semibold text-gray-400 block mb-2"><Clock className="w-3.5 h-3.5 inline mr-1 text-orange-400" />Return Time</label>
+                  <input type="time" value={returnTime} onChange={(e) => setReturnTime(e.target.value)} className="w-full px-4 py-3 border border-white/10 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 bg-[#15202e] text-white" />
                 </div>
               </div>
             </div>
 
             {/* Customer Info */}
-            <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-              <h2 className="font-bold text-[#12334A] mb-1 text-sm uppercase tracking-wider">Your Information</h2>
+            <div className="bg-[#0D1520] rounded-2xl border border-white/10 p-6 shadow-sm">
+              <h2 className="font-bold text-white mb-1 text-sm uppercase tracking-wider">Your Information</h2>
               <p className="text-xs text-gray-400 mb-4">This information will be dispatched automatically to the shop owner.</p>
               <div className="space-y-4">
                 {[
@@ -345,9 +347,9 @@ Owner Phone: 9286535286
                   { id: 'license', label: 'Driving License Number', icon: FileText, type: 'text', placeholder: 'UK04 20210012345', field: 'license' as const },
                 ].map((field) => (
                   <div key={field.id}>
-                    <label htmlFor={field.id} className="text-xs font-semibold text-gray-600 block mb-2">
-                      <field.icon className="w-3.5 h-3.5 inline mr-1 text-orange-500" />
-                      {field.label} <span className="text-red-500">*</span>
+                    <label htmlFor={field.id} className="text-xs font-semibold text-gray-300 block mb-2">
+                      <field.icon className="w-3.5 h-3.5 inline mr-1 text-orange-400" />
+                      {field.label} <span className="text-red-400">*</span>
                     </label>
                     <input
                       id={field.id}
@@ -358,11 +360,11 @@ Owner Phone: 9286535286
                         setForm((f) => ({ ...f, [field.field]: e.target.value }));
                         if (errors[field.field]) setErrors((er) => ({ ...er, [field.field]: undefined }));
                       }}
-                      className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition-colors ${
-                        errors[field.field] ? 'border-red-400 bg-red-50' : 'border-gray-200 bg-gray-50'
+                      className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-colors ${
+                        errors[field.field] ? 'border-red-400 bg-red-950/20 text-white' : 'border-white/10 bg-[#15202e] text-white placeholder-gray-500'
                       }`}
                     />
-                    {errors[field.field] && <p className="text-xs text-red-500 mt-1">{errors[field.field]}</p>}
+                    {errors[field.field] && <p className="text-xs text-red-400 mt-1">{errors[field.field]}</p>}
                   </div>
                 ))}
               </div>
@@ -371,16 +373,16 @@ Owner Phone: 9286535286
 
           {/* RIGHT: Order Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm sticky top-24">
-              <h2 className="font-bold text-[#12334A] mb-5">Order Summary</h2>
+            <div className="bg-[#0D1520] rounded-2xl border border-white/10 p-6 shadow-sm sticky top-24">
+              <h2 className="font-bold text-white mb-5">Order Summary</h2>
 
               {/* Scooter */}
-              <div className="flex items-center gap-3 pb-4 border-b border-gray-100 mb-4">
-                <div className="w-16 h-12 bg-gray-50 rounded-xl flex-shrink-0 relative overflow-hidden">
+              <div className="flex items-center gap-3 pb-4 border-b border-white/10 mb-4">
+                <div className="w-16 h-12 bg-[#15202e] rounded-xl flex-shrink-0 relative overflow-hidden border border-white/5">
                   <Image src={scooter.image} alt={scooter.name} fill className="object-contain p-1" />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm text-[#12334A]">{scooter.name}</p>
+                  <p className="font-semibold text-sm text-white">{scooter.name}</p>
                   <p className="text-xs text-gray-400">
                     {rental.days} {rental.days === 1 ? 'day' : 'days'} rental
                   </p>
@@ -390,38 +392,38 @@ Owner Phone: 9286535286
               {/* Breakdown */}
               <div className="space-y-3 mb-4">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">
+                  <span className="text-gray-400">
                     {formatPrice(scooter.pricePerDay)} × {rental.days} {rental.days === 1 ? 'day' : 'days'}
                   </span>
-                  <span className="font-medium text-[#12334A]">{formatPrice(rental.total)}</span>
+                  <span className="font-medium text-white">{formatPrice(rental.total)}</span>
                 </div>
               </div>
 
-              <div className="border-t border-gray-100 pt-4 flex justify-between mb-6">
-                <span className="font-bold text-[#12334A]">Total Rent</span>
-                <span className="font-extrabold text-orange-500 text-xl">{formatPrice(total)}</span>
+              <div className="border-t border-white/10 pt-4 flex justify-between mb-6">
+                <span className="font-bold text-white">Total Rent</span>
+                <span className="font-extrabold text-orange-400 text-xl">{formatPrice(total)}</span>
               </div>
 
               {/* Automated Dispatch Promise Notice */}
-              <div className="bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-3.5 mb-5 space-y-1.5 text-xs text-gray-700">
-                <p className="font-bold text-emerald-900 flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              <div className="bg-emerald-950/40 border border-emerald-500/30 rounded-xl p-3.5 mb-5 space-y-1.5 text-xs text-emerald-300">
+                <p className="font-bold text-emerald-400 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                   1-Tap Automated Sending:
                 </p>
-                <p className="text-emerald-800 leading-relaxed text-[11px]">
-                  Tapping the button below sends your details straight to the owner on <strong>WhatsApp (9286535286)</strong> and <strong>Gmail (Ra1899490@gmail.com)</strong>.
+                <p className="text-gray-300 leading-relaxed text-[11px]">
+                  Tapping the button below sends your details straight to the owner on <strong className="text-white">WhatsApp (9286535286)</strong> and <strong className="text-white">Gmail (Ra1899490@gmail.com)</strong>.
                 </p>
               </div>
 
               {/* Trust Badges */}
-              <div className="bg-gray-50 rounded-xl p-3 mb-5 space-y-2">
+              <div className="bg-[#15202e] rounded-xl p-3 mb-5 space-y-2 border border-white/5">
                 {[
                   `Shop: ${SITE_CONFIG.address}`,
                   'Helmet included with every ride',
                   'Free cancellation up to 24h before',
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-xs text-gray-600">
-                    <Check className="w-3.5 h-3.5 text-green-500 flex-shrink-0" />
+                  <div key={item} className="flex items-center gap-2 text-xs text-gray-300">
+                    <Check className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
                     {item}
                   </div>
                 ))}
@@ -431,7 +433,7 @@ Owner Phone: 9286535286
               <button
                 onClick={handleConfirm}
                 disabled={isLoading}
-                className="w-full py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-bold rounded-2xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base"
+                className="w-full py-4 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 disabled:opacity-50 text-white font-bold rounded-2xl transition-all duration-200 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base shimmer-btn"
                 id="confirm-booking-btn"
               >
                 {isLoading ? (
@@ -451,9 +453,9 @@ Owner Phone: 9286535286
               </button>
 
               {/* Support note */}
-              <div className="mt-4 pt-4 border-t border-gray-100 text-center">
-                <p className="text-xs text-gray-500 mb-1">Direct Owner Assistance:</p>
-                <div className="flex justify-center gap-3 text-xs font-bold text-orange-600">
+              <div className="mt-4 pt-4 border-t border-white/10 text-center">
+                <p className="text-xs text-gray-400 mb-1">Direct Owner Assistance:</p>
+                <div className="flex justify-center gap-3 text-xs font-bold text-orange-400">
                   <a href={`tel:${SITE_CONFIG.phones[0]}`} className="hover:underline">
                     📞 {SITE_CONFIG.phones[0]}
                   </a>
@@ -473,7 +475,7 @@ Owner Phone: 9286535286
 
 export default function BookingPage() {
   return (
-    <Suspense fallback={<div className="pt-24 min-h-screen bg-[#F1F4F6] flex items-center justify-center"><div className="text-gray-500">Loading booking...</div></div>}>
+    <Suspense fallback={<div className="pt-24 min-h-screen bg-[#06090e] flex items-center justify-center"><div className="text-gray-400">Loading booking...</div></div>}>
       <BookingContent />
     </Suspense>
   );

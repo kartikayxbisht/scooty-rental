@@ -9,19 +9,19 @@ export default function LocationsSection() {
   )}`;
 
   return (
-    <section id="locations" className="bg-[#F1F4F6] py-20">
+    <section id="locations" className="bg-[#080D14] py-20 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block text-xs font-bold uppercase tracking-widest text-orange-500 bg-orange-50 border border-orange-100 px-4 py-2 rounded-full mb-4">
+          <div className="inline-block text-xs font-bold uppercase tracking-widest text-orange-400 bg-orange-500/10 border border-orange-500/20 px-4 py-2 rounded-full mb-4">
             Shop Location
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#12334A] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
             Our Shop in Kathgodam
           </h2>
-          <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
             We operate exclusively from our single, well-known shop at{' '}
-            <strong>Kathgodam calltax, HP Petrol Pump, Haldwani</strong>.
+            <strong className="text-white">Kathgodam calltax, HP Petrol Pump, Haldwani</strong>.
           </p>
         </div>
 
@@ -182,37 +182,37 @@ export default function LocationsSection() {
 
         {/* 3 Key Shop Advantages */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#0D1520] rounded-2xl p-6 border border-white/10 shadow-sm flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-green-500/10 text-emerald-400 border border-green-500/20 flex items-center justify-center flex-shrink-0">
               <CheckCircle2 className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-[#12334A] text-sm mb-1">Direct Gateway to Nainital</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">
+              <h4 className="font-bold text-white text-sm mb-1">Direct Gateway to Nainital</h4>
+              <p className="text-xs text-gray-400 leading-relaxed">
                 Located right at the Kathgodam toll exit where the hill road starts. No city traffic delays.
               </p>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#0D1520] rounded-2xl p-6 border border-white/10 shadow-sm flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-orange-500/10 text-orange-400 border border-orange-500/20 flex items-center justify-center flex-shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-[#12334A] text-sm mb-1">Mountain-Tested Vehicles</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">
+              <h4 className="font-bold text-white text-sm mb-1">Mountain-Tested Vehicles</h4>
+              <p className="text-xs text-gray-400 leading-relaxed">
                 All scooters are inspected and tuned specifically for steep inclines and uphill safety.
               </p>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+          <div className="bg-[#0D1520] rounded-2xl p-6 border border-white/10 shadow-sm flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="font-bold text-[#12334A] text-sm mb-1">Owner Direct Support</h4>
-              <p className="text-xs text-gray-500 leading-relaxed">
+              <h4 className="font-bold text-white text-sm mb-1">Owner Direct Support</h4>
+              <p className="text-xs text-gray-400 leading-relaxed">
                 Speak directly with the shop owner at 9286535286 for instant queries and booking assistance.
               </p>
             </div>
